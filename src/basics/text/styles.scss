@@ -1,0 +1,14 @@
+.text {
+	color: green;
+}
+
+$filters: (
+	sm: red,
+	md: blue,
+);
+
+@each $name, $filter in $filters {
+	.#{$name} {
+		color: #{$filter};
+	}
+}

@@ -1,6 +1,6 @@
 import { FC } from "react";
-import './styles.css'
+import classes from './styles.scss';
 
 export const Text:FC = () => {
-	return <span className="text">test</span>
+	return <span className={classes.text}>test</span>
 }
