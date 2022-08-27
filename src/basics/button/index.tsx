@@ -1,5 +1,5 @@
 import { FC, useState } from "react";
-import classes from './styles.module.scss'
+import classes from './styles.scss'
 
 export const Button:FC = () => {
 	const [value, setValue] = useState(0);
