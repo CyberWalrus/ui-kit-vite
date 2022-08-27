@@ -6,7 +6,7 @@ import svgr from 'vite-plugin-svgr';
 import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
 
 export default defineConfig({
-    css:{modules:{localsConvention: 'camelCaseOnly', globalModulePaths: [/\\.(s)?css$/], generateScopedName: '[name]_[hash:base64:4]'}},
+    css:{modules:{localsConvention: 'camelCaseOnly', globalModulePaths: [/.(s)?css$/], generateScopedName: '[local]_[hash:base64:4]'}},
     plugins: [
         svgr({exportAsDefault: true}),
         cssInjectedByJsPlugin(),
